@@ -1,4 +1,7 @@
-﻿Console.WriteLine("Введите число от 1 до 7: ");
+﻿int i = 1;
+do {
+    i = 1;
+Console.WriteLine("Введите число от 1 до 7: ");
 int a = Convert.ToInt32(Console.ReadLine());
 if (a == 1){
     Console.WriteLine("ПОНИдельник");
@@ -45,4 +48,10 @@ case 6:
 case 7:
     Console.WriteLine("ВОСКРЕС и нье");
     break;
+default:
+    Console.WriteLine("ЭТО НЕ ТО");
+    i = 0;
+    break;
 }
+}
+while (i != 1);
